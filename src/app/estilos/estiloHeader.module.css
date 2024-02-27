@@ -77,6 +77,10 @@
 }
 
 @media (max-width: 900px) {
+    .header {
+        justify-content: center;
+    }
+
     .apresentacaoHeader {
         gap: 20px;
     }
@@ -99,16 +103,17 @@
         font-size: 1.5rem;
         text-align: center;
     }
+
     .apresentacaoHeader a {
         font-size: 1rem;
-    
+
         background-color: var(--cor-secundaria);
-    
+
         border-radius: 20px;
-    
+
         filter: drop-shadow(0px 0px 5px var(--cor-principal));
     }
-    
+
     .apresentacaoHeader a:hover {
         filter: none;
     }
