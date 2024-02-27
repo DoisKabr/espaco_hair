@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+
+:root {
+    --cor-principal: #F24BE7;
+    --cor-secundaria: #EF13F2;
+    --cor-terciaria: #6C3B8C;
+    --cor-quartuaria: #553873;
+    --cor-quintuaria: #F2E7AE;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+
+    scroll-behavior: smooth;
+
+    transition: all .5s ease;
+}
+
+html {
+    background-color: #232323;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--cor-principal);
+}
+
+.footer {
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width: 100%;
+
+    padding: 1rem 0rem;
+
+    overflow: hidden;
+}
+
+.imageFooter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.imageFooter h2 {
+    color: var(--cor-principal);
+    font-size: 2rem;
+}
+
+.imageFooter img {
+    border-radius: 20px;
+}
+
+.linksFooter {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    gap: 10px;
+
+    height: 200px;
+
+    padding: 0rem 1.5rem;
+
+    border-left: 5px solid var(--cor-principal);
+}
+
+.linksFooter h2 {
+    color: var(--cor-principal);
+    font-size: 2rem;
+}
+
+.linksFooter a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.contatos {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    gap: 10px;
+
+    height: 200px;
+
+    padding: 0rem 1.5rem;
+
+    border-left: 5px solid var(--cor-principal);
+}
+
+.contatos a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+
+    text-decoration: none;
+    color: #fff;
+}
+
+.contatos h2 {
+    color: var(--cor-principal);
+    font-size: 2rem;
+}
+
+.contatos a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.contatos a img {
+    width: 30px;
+    height: 30px;
+}
+
+@media (max-width: 900px) {
+    .footer {
+        align-items: start;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+    
+        padding: 1rem 1rem;
+    }
+
+    .imageFooter {
+        width: 100%;
+    }
+
+    .linksFooter {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        width: 100%;
+    }
+
+    .contatos {
+        align-items: center;
+        justify-content: center;
+    
+        width: 100%;
+    }
+}

@@ -1,0 +1,115 @@
+.header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    width: 100%;
+    height: 100vh;
+
+    background-image: url("../../../public/images/cabelos/cabelo_background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    overflow: hidden;
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg,
+            #212121 0%,
+            transparent 100%);
+
+    z-index: 1;
+}
+
+.apresentacaoHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+
+    z-index: 5;
+}
+
+.apresentacaoHeader h1 {
+    margin: 3rem 0rem;
+    color: var(--cor-principal);
+    font-size: 5rem;
+}
+
+.apresentacaoHeader h4 {
+    color: #fff;
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.apresentacaoHeader h2 {
+    color: #fff;
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.apresentacaoHeader a {
+    margin: 2rem 0rem;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    color: #000;
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    background-color: var(--cor-secundaria);
+
+    border-radius: 20px;
+
+    filter: drop-shadow(0px 0px 5px var(--cor-principal));
+}
+
+.apresentacaoHeader a:hover {
+    filter: drop-shadow(0px 0px 1px var(--cor-principal));
+}
+
+@media (max-width: 900px) {
+    .apresentacaoHeader {
+        gap: 20px;
+    }
+
+    .apresentacaoHeader h1 {
+        margin: 0rem 0rem;
+        color: var(--cor-principal);
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .apresentacaoHeader h4 {
+        color: #fff;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .apresentacaoHeader h2 {
+        color: #fff;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .apresentacaoHeader a {
+        font-size: 1rem;
+    
+        background-color: var(--cor-secundaria);
+    
+        border-radius: 20px;
+    
+        filter: drop-shadow(0px 0px 5px var(--cor-principal));
+    }
+    
+    .apresentacaoHeader a:hover {
+        filter: none;
+    }
+}
