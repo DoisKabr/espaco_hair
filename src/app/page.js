@@ -17,10 +17,10 @@ export default function Inicio() {
     script.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6783865894564100";
     script.crossOrigin = "anonymous";
 
-    document.body.appendChild(script);
+    document.head.appendChild(script);
 
     return () => {
-      document.body.removeChild(script);
+      document.head.removeChild(script);
     }
   }, []);
 
