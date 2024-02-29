@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useEffect } from "react"
 
 import NavBar from "./modulos/navBar";
@@ -11,14 +13,14 @@ import Footer from "./modulos/footer";
 export default function Inicio() {
 
   useEffect(() => {
-    const script = document.createElement("script")
-    script.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6783865894564100"
-    script.crossOrigin = "anonymous"
+    const script = document.createElement("script");
+    script.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6783865894564100";
+    script.crossOrigin = "anonymous";
 
-    document.body.appendChild(script)
+    document.body.appendChild(script);
 
     return () => {
-      document.body.removeChild(script)
+      document.body.removeChild(script);
     }
   }, []);
 
