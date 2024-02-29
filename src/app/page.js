@@ -1,6 +1,4 @@
-import React from "react"
-
-import Head from "next/head";
+import React, { useEffect } from "react"
 
 import NavBar from "./modulos/navBar";
 import Header from "./modulos/header";
@@ -11,11 +9,21 @@ import SecaoContatos from "./modulos/secaoContatos";
 import Footer from "./modulos/footer";
 
 export default function Inicio() {
+
+  useEffect(() => {
+    const script = document.createElement("script")
+    script.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6783865894564100"
+    script.crossOrigin = "anonymous"
+
+    document.body.appendChild(script)
+
+    return () => {
+      document.body.removeChild(script)
+    }
+  }, []);
+
   return (
     <>
-      <Head>
-        <meta name="google-adsense-account" content="ca-pub-6783865894564100" />
-      </Head>
       <NavBar />
       <Header />
       <SecaoCabelos />
