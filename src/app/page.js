@@ -1,5 +1,7 @@
 import React from "react"
 
+import Head from "next/head";
+
 import NavBar from "./modulos/navBar";
 import Header from "./modulos/header";
 import SecaoCabelos from "./modulos/secaoCabelos";
@@ -11,6 +13,9 @@ import Footer from "./modulos/footer";
 export default function Inicio() {
   return (
     <>
+      <Head>
+        <meta name="google-adsense-account" content="ca-pub-6783865894564100" />
+      </Head>
       <NavBar />
       <Header />
       <SecaoCabelos />
