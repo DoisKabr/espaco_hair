@@ -14,6 +14,7 @@ export default function Inicio() {
 
   useEffect(() => {
     const script = document.createElement("script");
+    script.async
     script.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6783865894564100";
     script.crossOrigin = "anonymous";
 
